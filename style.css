@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav content sidebar"
+    "nav footer footer";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 70px 1fr 60px;
+}
+
+.nav,
+.footer,
+.header,
+.sidebar,
+.main {
+  background-color: cadetblue;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: content;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.footer {
+  grid-area: footer;
+}
